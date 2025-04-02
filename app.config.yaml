@@ -1,0 +1,15 @@
+application:
+  runtimeManifest:
+    packages:
+      testpackage:
+        license: Apache-2.0
+        actions:
+          generic:
+            function: src/actions/generic/index.js
+            web: "yes"
+            runtime: nodejs:22
+            inputs:
+              LOG_LEVEL: debug
+            annotations:
+              require-adobe-auth: false
+              final: true
